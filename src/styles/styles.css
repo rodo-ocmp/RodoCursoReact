@@ -1,0 +1,44 @@
+:root{
+    --principal: #06dfc9;
+    --second: #FFF5B7;
+    --third: #FF449F;
+    --fourth: #005F99;
+    --black: #131313;
+    --white: #faf3f3;
+}
+
+.principal{
+    min-height: 100vh;
+    color:var(--third);
+    background-color: var(--principal);
+}
+
+.secondary{
+    min-height: 100vh;
+    color:var(--second);
+    background-color: var(--fourth);
+}
+
+.container-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.form-react{
+    border-radius: 25px;
+    max-width: 500px;
+    width: 100%;
+    padding: 50px 20px;
+    background-color: var(--white);
+}
+
+.title{
+    justify-content: center;
+    text-align: center;
+}
+
+.table{
+    background-color: azure;
+}
