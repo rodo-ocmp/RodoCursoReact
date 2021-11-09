@@ -2,7 +2,8 @@
 import React from 'react';
 import Logo from '../images/brain2.png';
 
-const Index = ({form, onChange, onSubmit}) => (
+const Index = ({form, onChange, onSubmit, onClick}) => (
+<>
     <div className="principal">
         <div className="container-form">
             
@@ -21,12 +22,12 @@ const Index = ({form, onChange, onSubmit}) => (
 
                 <div className="form-group mb-3">
                     <label htmlFor="fechanac" className="form-label">Fecha de Nacimiento</label>
-                    <input required onChange={onChange} value={form.fechanac} type="date" className="form-control" name="fechanac" id="fechanac"/>
+                    <input onChange={onChange} value={form.fechanac} type="date" className="form-control" name="fechanac" id="fechanac"/>
                 </div>
 
                 <div className="form-group mb-3">
                     <label htmlFor="carrera" className="form-label">Carrera</label>
-                    <input required onChange={onChange} value={form.carrera} type="text" className="form-control" name="carrera" id="carrera" placeholder="Ingrese su carrera" />
+                    <input onChange={onChange} value={form.carrera} type="text" className="form-control" name="carrera" id="carrera" placeholder="Ingrese su carrera" />
                 </div>
 
                 <div className="form-group mb-3">
@@ -44,7 +45,18 @@ const Index = ({form, onChange, onSubmit}) => (
                 </div>
             </form>
         </div>
+    </div>
+
+    <div className="principal">
+        <div className="second-container">
+            <form onClick={onClick} className="form-react">
+                <div className="text-center mt-2">
+                    <button type="click" className="btn btn-secondary btn-lg btn-block">Ir a RFC</button>
+                </div>
+            </form>
         </div>
-        );
+    </div>
+    </>    
+);
 
         export default Index;

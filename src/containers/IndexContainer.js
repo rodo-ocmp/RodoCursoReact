@@ -14,12 +14,18 @@ const IndexContainer = () =>{
         history.push( "/welcome/", {form: form});
     }
 
+    const onClick = (e) =>{
+        e.preventDefault();
+        console.log( form );
+        history.push( "/rfc/", {form: form});
+    }
+
     const trash = (e) => {
 
     }
 
     return(
-        <Index trash={trash} form={form} onChange={onChange} onSubmit={onSubmit}/>
+        <Index trash={trash} form={form} onChange={onChange} onSubmit={onSubmit} onClick={onClick}/>
     )
 };
 

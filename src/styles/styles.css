@@ -23,7 +23,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 125vh;
+}
+
+.second-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
 }
 
 .form-react{
@@ -41,4 +48,15 @@
 
 .table{
     background-color: azure;
+}
+
+.form{
+    width: 100%;
+    max-width: 500px;
+}
+.txt-rfc{
+    letter-spacing: 10px;
+}
+label{
+    margin-bottom: 5px;
 }
